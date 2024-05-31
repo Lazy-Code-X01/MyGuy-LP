@@ -1,0 +1,24 @@
+@mixin center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin rounded-corners($radius: 5px) {
+	border-radius: $radius;
+}
+
+@mixin bottom-box-shadow(
+	$color: rgba(0, 0, 0, 0.1),
+	$offsetY: 4px,
+	$blurRadius: 8px,
+	$spreadRadius: 0
+) {
+	box-shadow: 0 $offsetY $blurRadius $spreadRadius $color;
+}

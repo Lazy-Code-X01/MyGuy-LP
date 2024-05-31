@@ -1,0 +1,222 @@
+@media screen and (max-width: 768px) {
+	.footer {
+		padding: 1.5rem 2rem;
+	}
+	nav {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+
+		.mobile-nav {
+			padding: 1rem 2rem;
+		}
+	}
+
+	.home_banner {
+		padding: 8rem 0rem 2rem 2rem;
+
+		.banner_heading {
+			font-size: 1.875rem;
+		}
+
+		.desc {
+			font-size: 0.938rem;
+		}
+
+		.search_container {
+			width: 80%;
+		}
+		.download_cta_container {
+			flex-direction: column;
+		}
+	}
+	.in_demand {
+		font-size: 0.938rem;
+	}
+	.join_lets_chat_btn_conainer {
+		display: none;
+	}
+	.MyGuy_Workspace {
+		.MyGuyHeading {
+			font-size: 1.875rem;
+		}
+	}
+	.MyGuy_FirstBox {
+		display: none;
+	}
+	.MyGuy_SecondBox {
+		width: 90%;
+	}
+	.explore_text {
+		font-size: 1.875rem;
+	}
+	.first_img_box {
+		display: none;
+	}
+	.over_100boxes {
+		flex-direction: column;
+	}
+	.over_100btn {
+		display: none;
+	}
+	.over_100 {
+		margin: 0 auto;
+	}
+	.second_img_box {
+		margin: 0 auto;
+
+		.sec_img {
+			width: 400px;
+		}
+
+		.images {
+			justify-content: center;
+			gap: 2rem;
+		}
+	}
+
+	.fourth_page {
+		.why {
+			font-size: 1.875rem;
+		}
+		.offers {
+			margin-top: 0.875rem;
+			font-size: 0.938rem;
+		}
+		.three_image_boxes {
+			flex-direction: column;
+			gap: 3rem;
+		}
+	}
+
+	.fifth_page {
+		.what {
+			font-size: 1.875rem;
+		}
+		.our {
+			font-size: 0.98rem;
+			margin-top: 1.5rem;
+			margin-left: 0;
+		}
+		.Afekhare {
+			margin-left: 0;
+			margin-top: 0.9rem;
+		}
+		.CEO {
+			margin: 0;
+		}
+		.vector_img {
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	// body {
+	// 	background-color: aqua;
+	// }
+	.footer {
+		flex-direction: column;
+	}
+	.mobile .mobile-nav {
+		padding: 0.9rem 1rem;
+	}
+	.home_banner {
+		padding: 8rem 1rem 1rem 1rem;
+		.banner_heading {
+			font-size: 1.625rem;
+		}
+
+		.desc {
+			font-size: 0.875rem;
+		}
+
+		.search_container {
+			width: 100%;
+			gap: 5px;
+			margin-top: 30px;
+
+			.search_icon {
+				padding: 0.7rem 1.5rem;
+
+				img {
+					width: 20px;
+				}
+			}
+
+			input {
+				font-size: 0.875rem;
+			}
+		}
+		.in_demand {
+			font-size: 0.875rem;
+		}
+
+		.download_cta_container {
+			flex-direction: row;
+			margin-top: 30px;
+
+			p {
+				display: none;
+			}
+
+			.app_store {
+				padding: 0.5rem 1rem;
+				border-radius: 10px;
+			}
+		}
+	}
+
+	.MyGuy_SecondBox {
+		width: 80%;
+	}
+	.explore_text {
+		font-size: 1.625rem;
+	}
+	.over_100boxes {
+		padding: 0;
+	}
+	.black {
+		font-size: 14px;
+	}
+	.apple_btn {
+		display: none;
+	}
+	.google_btn {
+		display: none;
+	}
+
+	.second_img_box .sec_img {
+		width: 100%;
+	}
+	.fourth_page {
+		margin-top: 4rem;
+		margin-bottom: 0rem;
+		.why {
+			font-size: 1.625rem;
+		}
+
+		.offers {
+			font-size: 0.875rem;
+		}
+	}
+	.fifth_page {
+		flex-direction: column-reverse;
+
+		.what {
+			font-size: 1.625rem;
+		}
+	}
+	.mobile_download {
+		display: block;
+		outline: none;
+		border: none;
+		background: none;
+
+		padding: 0.5rem 1rem;
+		border-radius: 10px;
+		background-color: $button-color;
+	}
+}
