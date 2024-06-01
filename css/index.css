@@ -180,6 +180,7 @@ body {
 }
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -242,6 +243,23 @@ nav ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
 }
 .cta button:active {
+  transform: scale(0.95); /* Pressed in effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow for active state */
+}
+
+.cta .mobile_join_btn {
+  background-color: #4e5ac3;
+  color: white;
+  width: max-content;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.cta .mobile_join_btn:hover {
+  transform: scale(1); /* Pop out effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
+}
+.cta .mobile_join_btn:active {
   transform: scale(0.95); /* Pressed in effect */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow for active state */
 }
@@ -411,6 +429,13 @@ nav ul li a:hover {
   width: 25px;
 }
 
+.lets_chat.floating {
+  position: fixed;
+  bottom: 110px;
+  right: 48px;
+  z-index: 1000;
+}
+
 .home_banner .chatIcon {
   margin-left: 10px;
   word-spacing: normal;
@@ -504,11 +529,6 @@ nav ul li a:hover {
 .MyGuy_SecondBox .workspace_container .workspace_box .ratingContainer .bx {
   font-size: 1.3rem;
   color: #047711;
-}
-.MyGuy_SecondBox .workspace_container .workspace_box .ratingContainer img {
-  display: block;
-  width: 20px;
-  height: 20px;
 }
 .MyGuy_SecondBox .workspace_container .workspace_box .personalInfo {
   display: flex;
@@ -747,14 +767,15 @@ nav ul li a:hover {
 .PainterBtn, .CarpenterBtn, .EngineerBtn {
   width: 9.375rem;
   min-height: 2.5rem;
-  border-radius: 6px;
+  border-radius: 15px;
   background-color: #050d56;
-  margin-top: 3rem;
-  color: white;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
   cursor: pointer;
   border: none;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .PainterBtn:hover, .CarpenterBtn:hover, .EngineerBtn:hover {
@@ -799,10 +820,21 @@ nav ul li a:hover {
 .vector_img {
   margin-left: 2rem;
 }
+.vector_img .ratingContainer {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+.vector_img .ratingContainer .bx {
+  font-size: 1.3rem;
+  color: #047711;
+}
 
-.CEO {
+.occupation, .MyGuy_SecondBox .workspace_container .workspace_box .personalInfo .status {
   font-weight: 1.125rem;
   margin-left: 2rem;
+  color: #000;
+  font-weight: 500;
 }
 
 .footer {

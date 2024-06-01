@@ -20,6 +20,17 @@ const closeNavWhenLiIsClicked = () => {
 };
 closeNavWhenLiIsClicked();
 
+window.addEventListener("scroll", function () {
+	const letsChatButton = document.querySelector(".lets_chat");
+	const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+	if (scrollPosition > 200) {
+		letsChatButton.classList.add("floating");
+	} else {
+		letsChatButton.classList.remove("floating");
+	}
+});
+
 // ==== Animate on Scroll Initialize  ==== //
 AOS.init();
 

@@ -109,6 +109,7 @@ body {
 // navigation section
 
 nav {
+	width: 100%;
 	@include space-between;
 	background-color: $white;
 	padding: 1.5rem 2rem;
@@ -163,6 +164,24 @@ nav ul li a {
 	font-size: 0.875rem;
 	font-weight: 500;
 	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+	&:hover {
+		transform: scale(1); /* Pop out effect */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
+	}
+
+	&:active {
+		transform: scale(0.95); /* Pressed in effect */
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow for active state */
+	}
+}
+
+.cta .mobile_join_btn {
+	background-color: $primary-color;
+	color: white;
+	width: max-content;
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 5px;
 	&:hover {
 		transform: scale(1); /* Pop out effect */
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
@@ -348,6 +367,13 @@ nav ul li a {
 	width: 25px;
 }
 
+.lets_chat.floating {
+	position: fixed;
+	bottom: 110px;
+	right: 48px;
+	z-index: 1000;
+}
+
 .home_banner .chatIcon {
 	margin-left: 10px;
 	word-spacing: normal;
@@ -462,12 +488,6 @@ nav ul li a {
 				.bx {
 					font-size: 1.3rem;
 					color: #047711;
-				}
-
-				img {
-					display: block;
-					width: 20px;
-					height: 20px;
 				}
 			}
 			.personalInfo {
@@ -745,23 +765,25 @@ nav ul li a {
 .PainterBtn {
 	width: 9.375rem;
 	min-height: 2.5rem;
-	border-radius: 6px;
+	border-radius: 15px;
 	background-color: $button-color;
-	margin-top: 3rem;
-	color: white;
+	margin-top: 2rem;
+	font-weight: 700;
+	font-size: 16px;
+	color: $white;
 	cursor: pointer;
 	border: none;
-	clip-path: polygon(
-		25% 0%,
-		75% 0%,
-		100% 25%,
-		100% 75%,
-		75% 100%,
-		25% 100%,
-		0% 75%,
-		0% 25%
-	);
-	transition: all 0.3s ease;
+	// clip-path: polygon(
+	// 	25% 0%,
+	// 	75% 0%,
+	// 	100% 25%,
+	// 	100% 75%,
+	// 	75% 100%,
+	// 	25% 100%,
+	// 	0% 75%,
+	// 	0% 25%
+	// );
+	transition: opacity 0.3s ease;
 }
 
 .PainterBtn:hover {
@@ -820,11 +842,26 @@ nav ul li a {
 
 .vector_img {
 	margin-left: 2rem;
+
+	.ratingContainer {
+		// margin-top: 17px;
+		display: flex;
+		gap: 5px;
+		width: 100%;
+		// background-color: grey;
+
+		.bx {
+			font-size: 1.3rem;
+			color: #047711;
+		}
+	}
 }
 
-.CEO {
+.occupation {
 	font-weight: 1.125rem;
 	margin-left: 2rem;
+	color: $black;
+	font-weight: 500;
 }
 
 //footer
